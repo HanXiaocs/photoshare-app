@@ -1,0 +1,15 @@
+<div id="top10useryo">
+<form method="GET" action ="/top10user">
+<h1>Here are top 10 popular users!</h1>
+<ul>
+  {% for user in users %}
+  <li>
+  User: {{user[1]}}<br>
+  </li>
+   <li>
+  Comments number + photo uploaded number: {{user[0]}}<br>
+  </li>
+  {% endfor %}
+</ul>
+</form>
+</div>

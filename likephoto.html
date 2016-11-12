@@ -1,0 +1,22 @@
+<head>
+    <title>Like the photo!</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>Do you like this photo?</h1>
+    </div>
+    <form method="post" enctype="multipart/form-data" action="/like/{{photo_id}}">
+        <label for="description">Yes/No</label>
+        <input type="text" name="description" required='true' /><br />
+        <input type="submit" value="add" />
+    </form>
+<p>number of users liked this photo: {{numberlike}}</p>
+<ul>
+{% for user in users %}
+	<li>{{user[0]}}</li>
+	{% endfor %}
+</ul>
+
+
+</body>

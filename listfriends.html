@@ -1,0 +1,16 @@
+
+<div id="friendlistyo">
+<form method="GET" action ="/listfriends">
+{% if friends %}
+<h1>Hello {{ name }}! Here are all your friends!</h1>
+<ul>
+  {% for friend in friends %}
+  <li>
+  {{friend[0]}}<br>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+</form>
+</div>
+

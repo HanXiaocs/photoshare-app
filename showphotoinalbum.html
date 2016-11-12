@@ -1,0 +1,18 @@
+<div id="photosinalbumyo">
+<form method="get" action ="/album/{{album_id}}">
+{% if name %}
+<h1>Hello {{ name }}! Here are all your photos inside this album!</h1>
+{% endif%}
+<ul>
+  {% for photo in photos %}
+  <li>
+  photo: {{photo[0]}}<br>
+  <img src='data:image/png;base64, {{photo[1]}}'/>
+
+  </li>
+  <li><a href="/like/{{photo[1]}}">Do you want to like this photo?</li>
+  {% endfor %}
+</ul>
+
+</form>
+</div>

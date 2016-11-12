@@ -1,0 +1,15 @@
+<head>
+    <title>Create a Comment!</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>You can write a comment below for this photo</h1>
+        <label for='description'>You can only leave comments for the photos that are not yours!</label>
+    </div>
+    <form method="post" enctype="multipart/form-data" action="/comment/{{photoid}}">
+        <label for="description">Write your comment</label>
+        <input type="text" name="description" required='true' /><br />
+        <input type="submit" value="Create" />
+    </form>
+</body>

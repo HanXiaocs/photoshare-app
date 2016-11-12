@@ -1,0 +1,15 @@
+<div id="allalbumlistyo">
+<form method="get" enctype="multipart/form-data" action ="/listallalbums">
+{% if albums %}
+<h1>Hello ! Here are all albums!</h1>
+<ul>
+  {% for album in albums %}
+  <li>
+  {{album[0]}}<br>
+  <a href='/album/{{album[1]}}'>album id: {{album[1]}}<br></a>
+  </li>
+  {% endfor %}
+</ul>
+{% endif %}
+</form>
+</div>

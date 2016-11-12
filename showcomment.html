@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Here are the comments for this photo!</title>
+
+  </head>
+  <h1>Here are the comments for this photo!</h1>
+  <body>
+    <ul>
+        {% for comment in comments %}
+        <li>Comment:{{comment[2]}}</li>
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+  </body>
+</html>

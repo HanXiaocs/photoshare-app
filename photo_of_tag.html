@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Here are the photos for this tag!</title>
+
+  </head>
+  <body>
+    <ul>
+        {% for photo in photos %}
+        <li>photo<br>
+        <form method="post" enctype="multipart/form-data" action="/photo_of_tag/{{tag_word}}">
+        <img src='data:image/png;base64, {{photo[0]}}'/></li>
+        <li><a href='/showtags/{{photo[1]}}'>See the tags under this photo!</a> </li>
+        <li><a href="/like/{{photo[1]}}">Do you want to like this photo?</li>
+
+
+
+
+
+        {% endfor %}
+    </ul>
+    <a href="/">Home</a>
+  </body>
+</html>

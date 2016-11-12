@@ -1,0 +1,16 @@
+<head>
+    <title>tag the photo!</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>You can addd a tag below for this photo</h1>
+    </div>
+    <form method="post" enctype="multipart/form-data" action="/tag/{{photoid}}">
+        <label for="description">add your tag</label>
+        <input type="text" name="description" required='true' /><br />
+        <input type="submit" value="add" />
+    </form>
+
+
+</body>

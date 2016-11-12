@@ -1,0 +1,18 @@
+<head>
+    <title>Create an Album!</title>
+</head>
+<body>
+	<div class="title">
+		<h1>
+			{{name}} You can create an album below~_~
+		</h1>
+	</div>
+	<div id="albumidyo">
+		<form method="post" action="/createalbum">
+			<label  for="album_name">Enter a name for your album</label>
+			<input type="text" name="album_name">
+			<input type="submit" name="Create">
+		</form>
+	</div>
+</body>
+<a href='/'>Home</a>
